@@ -1,4 +1,5 @@
 using eTickets.Data;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography.X509Certificates;
 
 namespace eTickets
@@ -10,8 +11,10 @@ namespace eTickets
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             // DbContext Config
-            builder.Services.AddDbContext<AppDbContext>();
+            builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString
+                ("DefaultConnectionString")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -42,7 +45,12 @@ namespace eTickets
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            // Seed database
+            AppDbInitializer.Seed(app);
+
             app.Run();
+
+            
         }
     }
 
