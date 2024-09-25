@@ -65,7 +65,7 @@ namespace eTickets.Data
                         {
                             FullName = "Actor 1",
                             Bio = "This is the Bio of the first actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg",
+                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
                             },
                         new Actor()
                         {
@@ -140,58 +140,58 @@ namespace eTickets.Data
                     {
                         new Movie()
                         {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
-                            Price = 39.99,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
-                            StartDate = DateTime.Now.AddDays(-10),
-                            EndDate = DateTime.Now.AddDays(-2),
-                            CinemaId = 1,
-                            ProducerId = 3,
-                            MovieCategory = Enums.MovieCategory.Cartoon
-                        },
-                        new Movie()
-                        {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
-                            Price = 39.99,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-2.jpeg",
-                            StartDate = DateTime.Now.AddDays(-10),
-                            EndDate = DateTime.Now.AddDays(-2),
-                            CinemaId = 1,
-                            ProducerId = 3,
-                            MovieCategory = Enums.MovieCategory.Cartoon
-                        },
-                        new Movie()
-                        {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
+                            Name = "Life",
+                            Description = "This is the Life movie description",
                             Price = 39.99,
                             ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
                             StartDate = DateTime.Now.AddDays(-10),
-                            EndDate = DateTime.Now.AddDays(-2),
-                            CinemaId = 1,
+                            EndDate = DateTime.Now.AddDays(10),
+                            CinemaId = 3,
                             ProducerId = 3,
-                            MovieCategory = Enums.MovieCategory.Cartoon
+                            MovieCategory = Enums.MovieCategory.Documentary
                         },
                         new Movie()
                         {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
+                            Name = "The Shawshank Redemption",
+                            Description = "This is the Shawshank Redemption description",
+                            Price = 39.99,
+                            ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
+                            StartDate = DateTime.Now,
+                            EndDate = DateTime.Now.AddDays(3),
+                            CinemaId = 1,
+                            ProducerId = 1,
+                            MovieCategory = Enums.MovieCategory.Action
+                        },
+                        new Movie()
+                        {
+                            Name = "Ghost",
+                            Description = "This is the Ghost movie description",
                             Price = 39.99,
                             ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
+                            StartDate = DateTime.Now,
+                            EndDate = DateTime.Now.AddDays(7),
+                            CinemaId = 4,
+                            ProducerId = 4,
+                            MovieCategory = Enums.MovieCategory.Horror
+                        },
+                        new Movie()
+                        {
+                            Name = "Race",
+                            Description = "This is the Race movie description",
+                            Price = 39.99,
+                            ImageURL = "http://dotnethow.net/images/movies/movie-6.jpeg",
                             StartDate = DateTime.Now.AddDays(-10),
-                            EndDate = DateTime.Now.AddDays(-2),
+                            EndDate = DateTime.Now.AddDays(-5),
                             CinemaId = 1,
-                            ProducerId = 3,
-                            MovieCategory = Enums.MovieCategory.Cartoon
+                            ProducerId = 2,
+                            MovieCategory = Enums.MovieCategory.Documentary
                         },
                         new Movie()
                         {
                             Name = "Scoob",
                             Description = "This is the Scoob movie description",
                             Price = 39.99,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-5.jpeg",
+                            ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-2),
                             CinemaId = 1,
